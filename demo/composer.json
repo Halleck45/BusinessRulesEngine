@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-0": {
+            "": "./src/"
+        },
+        "files": ["../vendor/autoload.php"]
+    }
+}

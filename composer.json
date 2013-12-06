@@ -1,0 +1,26 @@
+{
+    "name": "BusinessRulesEngine",
+    "description": "POC of minimalist BusinessRulesEngine with Symfony 2.4 ExpressionLanguage component.",
+    "license": "MIT",
+    "authors": [
+        {
+        "name": "Jean-François Lépine",
+        "email": "lepinejeanfrancois@yahoo.fr",
+        "homepage": "https://www.twitter.com/Halleck45",
+        "role": "Copyright Holder"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "": "./src/"
+        },
+        "files": ["./src/Hal/BusinessRulesEngine/functions.php"]
+    },
+    "require": {
+        "symfony/expression-language": "2.4",
+        "symfony/property-access": "2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}

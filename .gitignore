@@ -1,0 +1,8 @@
+phpunit.xml
+composer.lock
+composer.phar
+autoload.php
+/vendor/
+/demo/vendor/
+
+.idea
