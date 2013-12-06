@@ -5,7 +5,7 @@ POC of minimalist BusinessRulesEngine with Symfony 2.4 ExpressionLanguage compon
 This package contains two component:
 
 + `Hal\Component\BusinessRulesEngine\Collection`: collection filtered with business rules
-+ `BRE`: evaluation function
++ `BRE`: evaluation function. Maybe a [LINQ](http://fr.wikipedia.org/wiki/Language_Integrated_Query) component in the future ? :)
 
 # Installation
 
@@ -68,6 +68,13 @@ var_dump($spec->isSatisfiedBy($user));
 $spec = (new UserIsAdult())
         ->andSpec(new UserHasEnoughMoney(600));
 // false
+
+// example of specification
+class UserIsAdult extends Specification\Specification {
+    public function isSatisfiedBy($user) {
+        return \BRE('user => user.age > 18', $user);
+    }
+}
 ```
 # Author
 
