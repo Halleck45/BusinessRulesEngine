@@ -25,7 +25,7 @@ BRE('user => user.age > 18', $user); // false
 BRE('user => user.age > 18 and user.age < 45', $user); // true
 
 // you can provide multiple variables as following:
-BRE('user.age > 1required', array('foo' => $user, 'required' 18); // true
+BRE('user.age > required', array('foo' => $user, 'required' 18); // true
 
 ```
 
